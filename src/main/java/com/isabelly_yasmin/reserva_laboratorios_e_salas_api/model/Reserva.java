@@ -36,6 +36,6 @@ public class Reserva {
     @JoinColumn(name = "sala_id", nullable = false)
     private Sala sala;
 
-    @Column(name = "status_reserva", nullable = false, length = 20)
-    private String statusReserva;
+    @ManyToOne
+    private StatusReserva statusReserva;
 }

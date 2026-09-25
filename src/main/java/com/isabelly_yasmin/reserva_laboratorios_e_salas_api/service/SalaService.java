@@ -1,8 +1,8 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.service;
 
-import com.example.SisAcademicoAlunos_19.model.Sala;
-import com.example.SisAcademicoAlunos_19.repository.SalaRepository;
-import com.example.SisAcademicoAlunos_19.validator.SalaValidator;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Sala;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.repository.SalaRepository;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.validator.SalaValidator;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,7 +10,6 @@ import java.util.Optional;
 
 @Service
 public class SalaService {
-
     private final SalaRepository salaRepository;
     private final SalaValidator salaValidator;
 
@@ -23,22 +22,18 @@ public class SalaService {
     }
 
     public Sala inserirSala(Sala sala) {
-
         salaValidator.validar(sala);
-
         return salaRepository.save(sala);
     }
 
     public Optional<Sala> pegarDadosSalaPorId(Integer id) {
-
         return salaRepository.findById(id);
     }
 
     public Sala atualizarSala(Sala sala) {
-
         if (sala.getId() == null) {
             throw new IllegalArgumentException(
-                    "Não existe a SALA com o ID informado."
+                    "Não existe sala com o ID informado."
             );
         }
 
@@ -48,7 +43,6 @@ public class SalaService {
     }
 
     public void excluirSalaPorId(Integer id) {
-
         salaRepository.deleteById(id);
     }
 

@@ -1,8 +1,8 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.service;
 
-import com.example.SisAcademicoAlunos_19.model.Usuario;
-import com.example.SisAcademicoAlunos_19.repository.UsuarioRepository;
-import com.example.SisAcademicoAlunos_19.validator.UsuarioValidator;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Usuario;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.repository.UsuarioRepository;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.validator.UsuarioValidator;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,7 +10,6 @@ import java.util.Optional;
 
 @Service
 public class UsuarioService {
-
     private final UsuarioRepository usuarioRepository;
     private final UsuarioValidator usuarioValidator;
 
@@ -23,9 +22,7 @@ public class UsuarioService {
     }
 
     public Usuario inserirUsuario(Usuario usuario) {
-
         usuarioValidator.validar(usuario);
-
         return usuarioRepository.save(usuario);
     }
 

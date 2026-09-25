@@ -1,6 +1,6 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.repository;
 
-import com.example.SisAcademicoAlunos_19.model.Usuario;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

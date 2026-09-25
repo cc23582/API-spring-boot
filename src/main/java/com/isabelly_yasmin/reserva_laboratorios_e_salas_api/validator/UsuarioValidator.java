@@ -1,12 +1,11 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.validator;
 
-import com.example.SisAcademicoAlunos_19.model.Usuario;
-import com.example.SisAcademicoAlunos_19.repository.UsuarioRepository;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Usuario;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.repository.UsuarioRepository;
 import org.springframework.stereotype.Component;
 
 @Component
 public class UsuarioValidator {
-
     private final UsuarioRepository usuarioRepository;
 
     public UsuarioValidator(UsuarioRepository usuarioRepository) {
@@ -14,7 +13,6 @@ public class UsuarioValidator {
     }
 
     public void validar(Usuario usuario) {
-
         if (usuarioRepository.findByCpf(usuario.getCpf()).isPresent()) {
             throw new IllegalArgumentException(
                     "CPF já cadastrado"

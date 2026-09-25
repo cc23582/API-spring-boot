@@ -1,9 +1,9 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller;
 
-import com.example.SisAcademicoAlunos_19.controller.dto.UsuarioDTO;
-import com.example.SisAcademicoAlunos_19.controller.dto.UsuarioRespostaDTO;
-import com.example.SisAcademicoAlunos_19.model.Usuario;
-import com.example.SisAcademicoAlunos_19.service.UsuarioService;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto.UsuarioDTO;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto.UsuarioRespostaDTO;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Usuario;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.service.UsuarioService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/usuarios")
 public class UsuarioController {
-
     private final UsuarioService usuarioService;
 
     public UsuarioController(UsuarioService usuarioService) {
@@ -26,7 +25,6 @@ public class UsuarioController {
     public ResponseEntity<UsuarioRespostaDTO> inserir(
             @Valid @RequestBody UsuarioDTO dto
     ) {
-
         Usuario usuario = new Usuario();
 
         usuario.setCpf(dto.cpf());
@@ -63,7 +61,6 @@ public class UsuarioController {
     public ResponseEntity<UsuarioRespostaDTO> buscarPorId(
             @PathVariable Long id
     ) {
-
         return usuarioService.buscarPorId(id)
                 .map(usuario ->
                         ResponseEntity.ok(
@@ -80,7 +77,6 @@ public class UsuarioController {
             @PathVariable Long id,
             @Valid @RequestBody UsuarioDTO dto
     ) {
-
         Usuario usuario = new Usuario();
 
         usuario.setCpf(dto.cpf());
@@ -108,7 +104,6 @@ public class UsuarioController {
     public ResponseEntity<Void> excluir(
             @PathVariable Long id
     ) {
-
         usuarioService.excluirUsuario(id);
 
         return ResponseEntity.noContent().build();

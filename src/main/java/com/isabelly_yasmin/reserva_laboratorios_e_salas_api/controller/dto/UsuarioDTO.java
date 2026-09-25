@@ -1,6 +1,6 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto;
 
-import com.example.SisAcademicoAlunos_19.validator.CpfValido;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.validator.CpfValido;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

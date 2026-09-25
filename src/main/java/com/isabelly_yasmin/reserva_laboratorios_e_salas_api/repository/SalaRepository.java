@@ -1,6 +1,6 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.repository;
 
-import com.example.SisAcademicoAlunos_19.model.Sala;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Sala;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

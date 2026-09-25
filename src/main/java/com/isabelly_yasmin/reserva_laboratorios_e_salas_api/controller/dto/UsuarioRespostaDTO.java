@@ -1,12 +1,11 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.example.SisAcademicoAlunos_19.model.Usuario;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Usuario;
 
 import java.time.LocalDate;
 
 public record UsuarioRespostaDTO(
-
         Long id,
 
         String cpf,

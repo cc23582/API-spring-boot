@@ -1,10 +1,10 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller;
 
-import com.example.SisAcademicoAlunos_19.controller.dto.ErroResposta;
-import com.example.SisAcademicoAlunos_19.controller.dto.SalaDTO;
-import com.example.SisAcademicoAlunos_19.exceptions.RegistroDuplicadoException;
-import com.example.SisAcademicoAlunos_19.model.Sala;
-import com.example.SisAcademicoAlunos_19.service.SalaService;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto.ErroResposta;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto.SalaDTO;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.exceptions.RegistroDuplicadoException;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Sala;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.service.SalaService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/salas")
 public class SalaController {
-
     private final SalaService salaService;
 
     public SalaController(SalaService salaService) {
@@ -28,9 +27,7 @@ public class SalaController {
     public ResponseEntity<Object> incluirSala(
             @RequestBody @Valid SalaDTO salaDTO
     ) {
-
         try {
-
             Sala sala =
                     salaDTO.mapearDadosParaEntidadeSala();
 
@@ -51,7 +48,6 @@ public class SalaController {
                     .body(resposta);
 
         } catch (RegistroDuplicadoException e) {
-
             var erroDTO =
                     ErroResposta.conflito(e.getMessage());
 
@@ -65,7 +61,6 @@ public class SalaController {
     public ResponseEntity<SalaDTO> pegarDadosSala(
             @PathVariable("id") Integer id
     ) {
-
         Optional<Sala> salaOptional =
                 salaService.pegarDadosSalaPorId(id);
 
@@ -95,7 +90,6 @@ public class SalaController {
     ) {
 
         try {
-
             Optional<Sala> salaOptional =
                     salaService.pegarDadosSalaPorId(id);
 
@@ -116,7 +110,6 @@ public class SalaController {
             return ResponseEntity.ok().build();
 
         } catch (RegistroDuplicadoException e) {
-
             var erroDTO =
                     ErroResposta.conflito(e.getMessage());
 
@@ -130,7 +123,6 @@ public class SalaController {
     public ResponseEntity<Object> excluirSala(
             @PathVariable("id") Integer id
     ) {
-
         Optional<Sala> salaOptional =
                 salaService.pegarDadosSalaPorId(id);
 

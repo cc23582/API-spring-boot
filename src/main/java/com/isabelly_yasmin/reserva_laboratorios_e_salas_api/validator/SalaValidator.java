@@ -1,15 +1,14 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.validator;
 
-import com.example.SisAcademicoAlunos_19.exceptions.RegistroDuplicadoException;
-import com.example.SisAcademicoAlunos_19.model.Sala;
-import com.example.SisAcademicoAlunos_19.repository.SalaRepository;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.exceptions.RegistroDuplicadoException;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Sala;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.repository.SalaRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
 @Component
 public class SalaValidator {
-
     private final SalaRepository salaRepository;
 
     public SalaValidator(SalaRepository salaRepository) {
@@ -17,7 +16,6 @@ public class SalaValidator {
     }
 
     public void validar(Sala sala) {
-
         Optional<Sala> salaEncontrada =
                 salaRepository.findByCodigo(sala.getCodigo());
 

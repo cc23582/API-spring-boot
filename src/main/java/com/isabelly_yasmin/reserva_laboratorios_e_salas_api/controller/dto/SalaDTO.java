@@ -1,6 +1,6 @@
 package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto;
 
-import com.example.SisAcademicoAlunos_19.model.Sala;
+import com.isabelly_yasmin.reserva_laboratorios_e_salas_api.model.Sala;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -8,7 +8,6 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public record SalaDTO(
-
         Integer id,
 
         @NotBlank(message = "Campo obrigatório")
@@ -43,11 +42,8 @@ public record SalaDTO(
 
         @NotBlank(message = "Campo obrigatório")
         String status
-
 ) {
-
     public Sala mapearDadosParaEntidadeSala() {
-
         Sala sala = new Sala();
 
         sala.setCodigo(this.codigo());

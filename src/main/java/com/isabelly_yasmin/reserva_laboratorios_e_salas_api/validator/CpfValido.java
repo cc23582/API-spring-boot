@@ -1,4 +1,4 @@
-package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.controller.dto;
+package com.isabelly_yasmin.reserva_laboratorios_e_salas_api.validator;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

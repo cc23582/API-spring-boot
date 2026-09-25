@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cf93058-5d44-4e7c-a997-0faa3f0e226c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/ReservaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/ReservaConsultaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/ReservaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/ReservaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/SalaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/SalaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/StatusRecursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/StatusRecursoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/SalaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/SalaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/StatusRecursoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/StatusRecursoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/UsuarioDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/UsuarioRespostaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/UsuarioRespostaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/model/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/model/Reserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/SalaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/SalaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/StatusRecursoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/StatusRecursoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/SalaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/SalaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/StatusRecursoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/StatusRecursoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/SalaValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/SalaValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/StatusRecursoValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/StatusRecursoValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/UsuarioValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/UsuarioValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +50,7 @@
       <workItem from="1788965462185" duration="31000" />
       <workItem from="1790344546382" duration="584000" />
       <workItem from="1790346463351" duration="51000" />
-      <workItem from="1790346600112" duration="4592000" />
+      <workItem from="1790346600112" duration="4930000" />
     </task>
     <servers />
   </component>

@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cf93058-5d44-4e7c-a997-0faa3f0e226c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/SalaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/SalaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/model/Sala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/SalaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/SalaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/SalaValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/controller/dto/StatusRecursoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/model/StatusRecurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/repository/StatusRecursoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/service/StatusRecursoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isabelly_yasmin/reserva_laboratorios_e_salas_api/validator/StatusRecursoValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
       <workItem from="1788965462185" duration="31000" />
       <workItem from="1790344546382" duration="584000" />
       <workItem from="1790346463351" duration="51000" />
-      <workItem from="1790346600112" duration="1704000" />
+      <workItem from="1790346600112" duration="2078000" />
     </task>
     <servers />
   </component>
